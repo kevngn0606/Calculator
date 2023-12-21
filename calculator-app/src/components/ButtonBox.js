@@ -1,6 +1,6 @@
 import "../assets/css/buttonbox.css";
 
-function ButtonBox({ children }) {
-  return <div className="button-box">{children}</div>;
+function ButtonBox({ children, className }) {
+  return <div className={className}>{children}</div>;
 }
 export default ButtonBox;

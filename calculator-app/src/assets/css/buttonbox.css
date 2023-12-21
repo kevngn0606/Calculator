@@ -1,10 +1,12 @@
-.button-box{
-    border: 1px solid red;
+.btn-box{
     padding: 5px;
     margin:0;
     width:80%;
     height: 70%;
     position: relative;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4,1fr);
     top: 10%;
     left: 50%;
     transform: translate(-50%,0);
