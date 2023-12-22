@@ -3,6 +3,7 @@ import "./App.css";
 import ButtonBox from "./components/ButtonBox";
 import Button from "./components/Button";
 import Wrapper from "./components/Wrapper";
+import CalContextProvider from "./context/CalContext";
 import Screen from "./components/Screen";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -27,12 +28,12 @@ function App() {
     <div className="App">
       <Header />
       <Body className="App-body">
-        <div>
+        <CalContextProvider>
           <Wrapper className="wrapper">
             <Screen className="screen" />
             <ButtonBox className="btn-box">{btnMap}</ButtonBox>
           </Wrapper>
-        </div>
+        </CalContextProvider>
       </Body>
       <Footer className="footer" />
     </div>
